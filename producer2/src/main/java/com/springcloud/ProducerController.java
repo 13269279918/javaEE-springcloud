@@ -13,6 +13,6 @@ public class ProducerController {
 
     @GetMapping(value = "/get")
     public String getProduct(){
-        return "product"+serverPort;
+        return "product from "+serverPort;
     }
 }

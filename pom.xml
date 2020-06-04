@@ -13,7 +13,13 @@
         <module>consumer</module>
         <module>eurekaServer</module>
         <module>gateway</module>
-        <module>configuration</module>
+        <module>config-server</module>
+        <module>eurekaServer2</module>
+        <module>producer2</module>
+        <module>hystrix-producer</module>
+        <module>hystrix-consumer</module>
+        <module>config-client</module>
+        <module>config-client2</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
@@ -115,6 +121,29 @@
                 <version>2.2.2.RELEASE</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-config</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>2.2.5.RELEASE</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

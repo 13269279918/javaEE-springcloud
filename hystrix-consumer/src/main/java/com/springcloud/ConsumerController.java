@@ -8,12 +8,11 @@ import javax.annotation.Resource;
 
 @RestController
 public class ConsumerController {
-
     @Resource
-    private RestTemplate restTemplate;
+    ConsumeService service;
 
     @GetMapping("/api/v1/demo/get")
     public String getProduct(){
-        return restTemplate.getForObject("http://CLOUD-PRODUCER-SERVICE/get",String.class);
+        return service.getProduct();
     }
 }

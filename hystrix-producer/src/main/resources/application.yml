@@ -1,13 +1,13 @@
 server:
-  port: 80
+  port: 8003
 
 spring:
   application:
-    name: cloud-consumer-service
+    name:cloud-hystrix-producer-service
 
-eureka:
+eureka;
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    reigster-with-eureka: true
+    fetch-register: true
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7002/eureka
